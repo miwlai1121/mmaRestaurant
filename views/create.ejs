@@ -1,0 +1,47 @@
+<html>
+   <body>
+         <h1><div class="ui huge header"> New Restaurant</div></h1>
+        <table style="width:100%">
+	<form name="form" action="/create" method="post" enctype="multipart/form-data" class="ui form">
+
+            <div class="field">
+                <tr>
+			<td style="width:20%"><label> Name: </label>
+			</td>
+                <td>
+			<input type="text" name="name" style="width:40%" required="required">
+		</td>
+		</tr>
+		<br>
+                <tr>
+			<td style="width=20%"><label> Borough: </label>
+		</td>
+                <td>
+			<input type="text" name="borough" style="width:40%" required="required">
+		</td>
+		</tr>
+		<br>
+                <tr>
+			<td style="width=20%"><label> Cuisine: </label>
+		</td>
+                <td><input type="text" name="cuisine" style="width:40%" required="required"></td></tr><br>
+                <tr><td style="width=20%"><label> Street: </label></td>
+                <td><input type="text" name="street" style="width:40%" required="required"></td></tr><br>
+                <tr><td style="width=20%"><label> Building: </label></td>
+                <td><input type="text" name="building" style="width:40%" required="required"></td></tr>
+                <tr><td style="width=20%"><label> Zipcode: </label></td>
+                <td><input type="text" name="zipcode" style="width:40%" required="required"></td></tr><br>
+                
+                <tr><td style="width=20%"><label> GPS Coordinates(lon.) </label></td>
+		<td><input type="text" name="Longitude"></td><br>
+                <tr><td style="width=20%"><label> GPS Coordinates(lat.) </label></td>
+                <td><input type="text" name="Latitude"></td><br>
+                <tr><td style="width=20%"><label> Photo: </label></td>
+                <td><input type='file' name='photo' /></td>
+                <td><input type="submit" value="Create" class="ui violet basic button"></td>
+          </div>
+        </form>
+</table>
+    </div>
+   </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Restaurants List</title>
+    </head>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <body>
+	<div class="w3-container w3-blue" align="center">
+	<H1>Restaurants List</H1>
+	</div>
+        <H2>Showing <%= restaurants.length %> restaurant(s)</H2>
+	<a href="/create">Create Restaurant</a><br>
+	<a href="/search">Search Restaurant</a>
+        <ol>
+            <% for (i in restaurants) { %>
+                <li><a href=/display?_id=<%= restaurants[i]._id%>><%=restaurants[i].name%></a></li>
+            <% } %>
+        </ol>
+	<a href="/logout">Logout</a>
+    </body>
+
+</html>

@@ -1,0 +1,32 @@
+<html>
+<head>
+    <title>Edit Restaurant</title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <div class="w3-container w3-blue" align="center">
+    <h1>Edit Restaurant</h1>
+    </div>
+    <form action="update" method="post" enctype="multipart/form-data">
+        Restaurant Name: <br>
+	<input type="text" name="name" value="<%=restaurant[0].name%>" minlength=1 required><br>
+	Borough: <br>
+	<input type="text" name="borough" value="<%=restaurant[0].borough%>" minlength=1><br>
+	Cuisine: <br>
+	<input type="text" name="cuisine" value="<%=restaurant[0].cuisine%>" minlength=1><br>
+	Address: <br>
+	Street: <input type="text" name="street" value="<%=restaurant[0].street%>" minlength=1><br>
+	Building: <input type="text" name="building" value="<%=restaurant[0].building%>" minlength=1><br>
+	Zipcode: <input type="text" name="zipcode" value="<%=restaurant[0].zipcode%>" minlength=1><br>
+	GPS Coordinates:<br>
+	Lon.: <input type="number" name="lon" value="<%=restaurant[0].lon%>" step="any"><br>
+	Lat.: <input type="number" name="lat" value="<%=restaurant[0].lat%>" step="any"><br>
+	Owner: <br>
+	<input type="text" name="owner" value="<%=restaurant[0].owner%>" minlength=1 required><br>
+	Photo: <br>
+	<input type="file" name="filetoupload"><br>
+        <input type="submit" value="Submit"><br>
+    </form>
+    <a href="/restaurants">Back</a>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+    "name": "server",
+    "description": "NodeJS Session",
+    "author": "Miwa",
+    "version": "0.0.1",
+    "dependencies": {
+        "body-parser": "*",
+        "cookie-session": "latest",
+        "ejs": "*",
+        "express": "latest",
+        "formidable": "latest",
+        "method-override": "^3.0.0",
+        "mongodb": "3.1",
+        "mongoose": "^5.7.13"
+    },
+    "engine": "node >= 0.10.0",
+    "scripts": {
+        "start": "node server"
+    }
+}

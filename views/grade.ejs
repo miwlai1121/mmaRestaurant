@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>Grade</title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <div class="w3-container w3-blue" align="center">
+    <h1>Grade</h1>
+    </div>
+    <form action="grade" method="post" enctype="multipart/form-data">
+        Score: <br>
+	<input type="number" name="score" min="1" max="10" required><br>
+	<input type="submit" value="Submit"><br>
+    </form>
+    <a href="/display?_id=<%= restaurant[0]._id%>">Back</a>
+</body>
+</html>

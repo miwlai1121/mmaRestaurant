@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+    <div class="w3-container w3-blue" align="center">
+ 	<h1><%=restaurants[0].name%></h1>
+    </div>
+    <img src=" data:<%=restaurants[0].mimetype%>;base64, <%=restaurants[0].image%>" style="width:100%">
+	Borough: <%=restaurants[0].borough%><br>
+	Cuisine: <%=restaurants[0].cuisine%><br><br>
+	Address: <br>
+	Street: <%=restaurants[0].street%><br>
+	Building: <%=restaurants[0].building%><br>
+	Zipcode: <%=restaurants[0].zipcode%><br>
+	Map: <a href="/map?_id=<%= restaurants[0]._id%>">Click here to open</a><br><br>
+	Grade: <br>
+	User: <br>
+	Score: <br><br>
+	Owner: <%=restaurants[0].owner%><br><br>
+
+	<form id='delete' action='/restaurant/<%=restaurants[0]._id%>?_method=DELETE' method='POST'>
+            <button class='ui red basic button'>Delete</button>
+        </form>
+
+	<a href="/">Back</a>
+	<a href="/grade?_id=<%= restaurants[0]._id%>">Rate</a><br>
+	<a href="/edit?_id=<%= restaurants[0]._id%>">Edit</a><br>
+	<a href="/logout">Logout</a>
+</body>
+
+</html>

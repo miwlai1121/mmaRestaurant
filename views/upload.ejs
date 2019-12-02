@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Create Restaurant</title>
+</head>
+<body>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <div class="w3-container w3-blue" align="center">
+    <h1>Create Restaurant</h1>
+    </div>
+    <form action="fileupload" method="post" enctype="multipart/form-data">
+        
+        Restaurant Name: <br>
+	<input type="text" name="restaurant_name" minlength=1 required><br>
+	Borough: <br>
+	<input type="text" name="borough" minlength=1><br>
+	Cuisine: <br>
+	<input type="text" name="cuisine" minlength=1><br>
+	Address: <br>
+	Street: <input type="text" name="street" minlength=1><br>
+	Building: <input type="text" name="building" minlength=1><br>
+	Zipcode: <input type="text" name="zipcode" minlength=1><br>
+	GPS Coordinates:<br>
+	Lon.: <input type="number" name="lon" step="any"><br>
+	Lat.: <input type="number" name="lat" step="any"><br>
+	Owner: <br>
+	<input type="text" name="owner" minlength=1 required><br>
+	Photo: <br>
+	<input type="file" name="filetoupload"><br>
+        <input type="submit" value="Submit"><br>
+    </form>
+    <a href="/restaurant">Back</a>
+<body>
+</html>
